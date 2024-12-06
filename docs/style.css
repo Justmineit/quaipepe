@@ -51,6 +51,7 @@ header .nav-container {
     margin-top: 120px; /* Adjust the margin so content doesn't overlap the fixed header */
     text-align: center;
     flex: 1;
+    padding: 0 15%; /* Add margin on the left and right */
 }
 
 /* Spacing for h1 */
@@ -67,13 +68,14 @@ h2 {
 
 /* Styling for the typed text content */
 #typed-content {
-    font-size: 1.2em;
+    font-size: 3em; /* Increase font size by 2x */
     margin-top: 30px;
     color: #fff;
     white-space: nowrap;
     overflow: hidden;
     width: 0;
     transition: width 2s ease;
+    padding: 10px; /* Add padding inside the text area */
 }
 
 /* Footer Section */

@@ -6,8 +6,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgba(206,15,20,255); /* Updated background color */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for typing effect */
+    background-color: rgba(206,15,20,255); /* Background color */
     color: white;
     display: flex;
     flex-direction: column;
@@ -51,6 +51,7 @@ header .nav-container {
     margin-top: 120px; /* Adjust the margin so content doesn't overlap the fixed header */
     text-align: center;
     flex: 1;
+    padding: 10px;
 }
 
 /* Spacing for h1 */
@@ -59,21 +60,17 @@ h1 {
     margin-top: 50px; /* Ensures h1 is 50px below header */
 }
 
-/* Spacing for subheading */
-h2 {
-    font-size: 1.5em;
-    font-weight: normal;
-}
-
-/* Styling for the typed text content */
+/* Typing effect container */
 #typed-content {
-    font-size: 3em; /* Increase font size by 2x */
+    font-size: 1.5em; /* Adjusted font size */
     margin-top: 30px;
     color: #fff;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%; /* Ensure the content width is 100% */
-    padding: 10px; /* Add padding inside the text area */
+    white-space: pre-wrap; /* Allows wrapping of long lines */
+    overflow-wrap: break-word; /* Prevents long words from breaking off-screen */
+    width: 100%;
+    padding: 10px;
+    border-right: 2px solid #fff; /* Mimics cursor */
+    display: inline-block;
 }
 
 /* Footer Section */

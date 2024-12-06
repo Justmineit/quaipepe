@@ -50,9 +50,17 @@ document.addEventListener('DOMContentLoaded', function() {
     function typeContent() {
         if (contentIndex < content.length) {
             let paragraph = content[contentIndex];
-            typedContent.innerHTML += paragraph;
-            contentIndex++;
-            setTimeout(typeContent, 2000); // Add delay between each part
+            let i = 0;
+            typedContent.innerHTML = "";  // Clear previous content
+            let typingEffect = setInterval(() => {
+                typedContent.innerHTML += paragraph[i];
+                i++;
+                if (i === paragraph.length) {
+                    clearInterval(typingEffect);
+                    contentIndex++;
+                    setTimeout(typeContent, 2000); // Add delay before the next paragraph
+                }
+            }, 100); // Adjust typing speed
         }
     }
 

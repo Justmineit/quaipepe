@@ -65,24 +65,15 @@ h2 {
     font-weight: normal;
 }
 
-/* Content Section */
-.content {
-    margin-top: 30px;
-}
-
-/* Styling for Logo (Image) */
-.logo {
-    max-width: 80%;
-    height: auto;
-    margin-bottom: 30px;
-}
-
-/* Story Section Placeholder */
-.story-placeholder {
+/* Styling for the typed text content */
+#typed-content {
     font-size: 1.2em;
+    margin-top: 30px;
     color: #fff;
-    margin: 30px;
-    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    transition: width 2s ease;
 }
 
 /* Footer Section */

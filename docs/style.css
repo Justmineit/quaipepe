@@ -72,8 +72,7 @@ h2 {
     color: #fff;
     white-space: nowrap;
     overflow: hidden;
-    width: 0;
-    transition: width 2s ease;
+    width: 100%; /* Ensure the content width is 100% */
     padding: 10px; /* Add padding inside the text area */
 }
 

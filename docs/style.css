@@ -1,18 +1,23 @@
-/* style.css */
-body {
-    font-family: Arial, sans-serif;
+/* Basic Reset */
+* {
     margin: 0;
     padding: 0;
-    background-color: #ff4c4c; /* Red background color */
-    color: white; /* White text color */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff4c4c; /* Red background */
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center; /* Center text horizontally */
-    flex-direction: column; /* Stack content vertically */
+    text-align: center;
+    flex-direction: column;
 }
 
+/* Container */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -20,12 +25,15 @@ body {
     width: 100%;
 }
 
+/* Header Section */
 header {
     margin-bottom: 20px;
+    padding-top: 20px; /* Padding to adjust space between header and content */
+    position: relative;
 }
 
+/* Navigation Buttons in Header */
 nav {
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -41,29 +49,34 @@ nav {
 }
 
 .nav-button:hover {
-    background-color: #444; /* Slightly lighter on hover */
+    background-color: #444;
 }
 
+/* Spacing for h1 */
 h1 {
     font-size: 3em;
-    margin-bottom: 10px;
+    margin-top: 50px; /* Ensures h1 is 50px below header */
 }
 
+/* Spacing for subheading */
 h2 {
     font-size: 1.5em;
     font-weight: normal;
 }
 
+/* Content Section */
 .content {
+    margin-top: 30px;
+}
+
+/* Styling for Logo (Image) */
+.logo {
+    max-width: 80%;
+    height: auto;
     margin-bottom: 30px;
 }
 
-img {
-    max-width: 80%;
-    height: auto;
-    border: 5px solid white; /* Optional: add a border around the image */
-}
-
+/* About Text */
 .story-placeholder {
     font-size: 1.2em;
     color: #fff;

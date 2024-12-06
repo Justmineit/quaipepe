@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ff4c4c; /* Red background */
+    background-color: rgba(224, 0, 5, 255); /* Updated background color */
     color: white;
     display: flex;
     flex-direction: column;

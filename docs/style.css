@@ -10,46 +10,45 @@ body {
     background-color: #ff4c4c; /* Red background */
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center;
     flex-direction: column;
-}
-
-/* Container */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    width: 100%;
+    min-height: 100vh;
 }
 
 /* Header Section */
 header {
-    margin-bottom: 20px;
-    padding-top: 20px; /* Padding to adjust space between header and content */
-    position: relative;
+    position: fixed; /* Fix the header to the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Dark background for header */
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Ensure it stays on top */
 }
 
-/* Navigation Buttons in Header */
-nav {
-    margin-bottom: 20px;
+header nav {
+    margin-bottom: 10px;
 }
 
 .nav-button {
-    background-color: #333;
+    background-color: #444;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     margin: 0 10px;
     border-radius: 5px;
     font-size: 1.2em;
-    display: inline-block;
 }
 
 .nav-button:hover {
-    background-color: #444;
+    background-color: #555;
+}
+
+/* Container for Main Content */
+.container {
+    margin-top: 80px; /* Push content down so it's not hidden by the fixed header */
+    flex: 1; /* Make the content section take up all available space */
+    text-align: center;
 }
 
 /* Spacing for h1 */
@@ -76,10 +75,25 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* About Text */
+/* Story Section Placeholder */
 .story-placeholder {
     font-size: 1.2em;
     color: #fff;
     margin: 30px;
     font-style: italic;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 1em;
 }

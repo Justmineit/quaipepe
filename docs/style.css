@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace; /* Monospaced font for typing effect */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for console effect */
     background-color: rgba(206,15,20,255); /* Background color */
     color: white;
     display: flex;
@@ -71,6 +71,7 @@ h1 {
     padding: 10px;
     border-right: 2px solid #fff; /* Mimics cursor */
     display: inline-block;
+    font-family: 'Courier New', monospace;
 }
 
 /* Footer Section */
